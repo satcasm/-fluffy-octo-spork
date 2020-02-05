@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css'><link rel="stylesheet" href="./musicStyle.css">
+
+    <script>
+        function changeSource() {
+            var audioSource = document.getElementById('inputFile').files[0].name;
+            var audio = document.getElementById('audioPlayer');
+            audio.src = audioSource;
+            var name = document.getElementById('songName');
+            songName.innerHTML = audioSource;
+        }
+    </script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flat music player</title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="weather.html">WeatherApp<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="music.html">MusicPlayer</a>
+            <a class="nav-item nav-link" href="email.html">EmailApp</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="contain">
+        <div class="container">
+            <div class="music-player">
+
+                <div class="cover">
+                    <img src="14625.png" alt="">   
+                </div>
+                
+                <div class="titre">
+                    <h3 id="artist">Artist</h3>
+                    <h1 id="songName">Song Name</h1>
+                </div>
+                <div class="lecteur">
+                    <audio style="width: 100%;" class="fc-media" id="audioPlayer">
+                        <source src="kygo-stole-the-show.mp3" type="audio/mp3"/>
+                    </audio>
+                </div>
+                
+            </div>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputFile">
+                  <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                        <button type="button" class="btn btn-primary" onclick="changeSource()">Play</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+   
+
+</body>
+</html>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js'></script><script  src="./musicScript.js"></script>
+<script>
+    function changeSource() {
+        var audioSource = document.getElementById('inputFile').files[0].name;
+        var audio = document.getElementById('audioPlayer');
+        audio.src = audioSource;
+    }
+</script>
+</body>
+</html>
