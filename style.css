@@ -4,3 +4,15 @@
 	background-size: cover;
 	background-position: center;
 }
+
+.jumbotron {
+    height:100%;
+}
+
+#weatherImage {
+    padding-bottom: 0px;
+}
+.temperature {
+    font-size: 40px;
+}
+

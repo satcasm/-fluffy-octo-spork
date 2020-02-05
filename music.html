@@ -30,16 +30,16 @@
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="home.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="weather.html">WeatherApp<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="music.html">MusicPlayer</a>
-            <a class="nav-item nav-link" href="email.html">EmailApp</a>
-          </div>
+            <div class="navbar-nav">
+                <li><a class="nav-item nav-link" href="weather.html">WeatherApp</a></li> 
+                <li><a class="nav-item nav-link" href="music.html">MusicPlayer</a></li> 
+                <li><a class="nav-item nav-link" href="email.html">EmailApp</a></li> 
+               </div>
         </div>
       </nav>
 
@@ -50,7 +50,15 @@
                 <div class="cover">
                     <img src="14625.png" alt="">   
                 </div>
-                
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputFile">
+                      <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                            <button type="button" class="btn btn-primary" onclick="changeSource()">Play</button>
+                    </div>
+                </div>
                 <div class="titre">
                     <h3 id="artist">Artist</h3>
                     <h1 id="songName">Song Name</h1>
@@ -62,16 +70,6 @@
                 </div>
                 
             </div>
-            <div class="input-group mb-3">
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="inputFile">
-                  <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
-                </div>
-                <div class="input-group-append">
-                        <button type="button" class="btn btn-primary" onclick="changeSource()">Play</button>
-                </div>
-            </div>
-            
         </div>
     </div>
 
