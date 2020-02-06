@@ -2,7 +2,12 @@
     outline: none;
 }
 html {
-    background: #f2f2f2;
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+
 }
 body {
     margin: 0;
@@ -43,8 +48,10 @@ h3 {
     margin-top: 6%;
     border-radius: 10px 10px;
     background: transparent linear-gradient(to bottom,rgba(10,11,31,0.9) 50%,rgb(10,11,31) 70%) repeat scroll 0 0;
+    background-size: cover;
     box-shadow: 1px 10px 20px 5px #222;
 }
+
 .cover {
     float: left;
     width: 100%;
@@ -238,4 +245,26 @@ h3 {
 }
 .mejs__controls .mejs__horizontal-volume-slider .mejs__horizontal-volume-current {
     background: #fff;
+}
+.custom-file {
+    cursor: pointer;
+}
+.contain {}
+
+.input-group {
+    border: 0;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    border-radius: 10%;
+}
+.custom-file-label {
+    border-radius: 10%;
+    margin-top: 2px;
+    border:inherit;
+    background-color: transparent !important;
+    padding-left: 12%;
 }
