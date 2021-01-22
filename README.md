@@ -1,5 +1,6 @@
-##Advaita
-It was a simple static website created for a competition.
+# Static Website
+It was a simple static website created for a competition purpose in the college.
+The screenshots are provided below.
 
 SCREENSHOTS=
 ![screenshot 1](home.png)
