@@ -1,3 +1,6 @@
+##Advaita
+It was a simple static website created for a competition.
+
 SCREENSHOTS=
 ![screenshot 1](home.png)
 ![screenshot 2](music.png)
